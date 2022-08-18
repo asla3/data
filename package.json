@@ -14,7 +14,7 @@
     "clean": "rimraf ./lib",
     "build": "yarn clean && tsc",
     "release": "release publish",
-    "prepare": "yarn simple-git-hooks init",
+    "prepare": "yarn simple-git-hooks init && tsc",
     "prepublishOnly": "yarn build && yarn test:ts && yarn test"
   },
   "files": [
